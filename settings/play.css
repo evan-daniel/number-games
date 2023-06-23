@@ -1,0 +1,90 @@
+/* CONTAINER */
+
+.settings {
+    height: 2rem; 
+    
+    font-size: 2rem; 
+
+    display: flex; 
+    justify-content: space-between;
+}
+
+/* BRAND */
+
+.brand {
+    flex: 0 0 4rem; 
+    height: 2rem; 
+    width: 4rem; 
+    
+    background-image: URL('/img/brand.svg'); 
+    background-position: center; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+/* SETTINGS INTERFACE */
+
+.game-settings {
+    margin-left: auto; 
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.mechanic-settings {
+    margin: 0 0.5ch; 
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.help {
+    margin: 0 0.5ch; 
+
+    font-size: 1rem; 
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* GAME */
+
+.game {
+    border: 1px solid #000; 
+    
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+/* GAME TEXT */
+
+.game-text {
+    flex: 0 1 auto; 
+    margin: 0 2ch; 
+    overflow: hidden;
+
+    font-size: 1rem; 
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.game-text--past {
+    color: #444; 
+}
+
+.game-text--last {
+    color: #888; 
+}
+
+.game-text--next {
+    color: #ccc; 
+}
+
+.game-text--future {
+    color: #eee; 
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1">
+    <path id="hand" d="M 0.5 0.5, L 0.5 0.05" fill="transparent" stroke="#000" stroke-width="0.05" stroke-linecap="round" transform="rotate(324, 0.5, 0.5)" />
+    <path d="M 0.5 0.5, L 0.5 0" fill="transparent" stroke-dasharray="0.05" stroke="#000" stroke-width="0.05" />
+    <circle id="confines" r="0.475" cx="0.5" cy="0.5" fill="none" stroke="#000" stroke-width="0.05" />
+</svg>

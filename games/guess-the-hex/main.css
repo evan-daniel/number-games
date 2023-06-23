@@ -1,0 +1,184 @@
+:root {
+    box-sizing: border-box; 
+    font-size: calc(0.5em + 1vw); 
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: 'Montserrat', Helvetica, sans-serif; 
+}
+
+game {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100vw; 
+    height: 100vh; 
+}
+
+game > * {
+    flex: 50%; 
+    height: 50vh; 
+}
+
+problem-color, 
+preview-color {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+    font-size: 5rem; 
+    font-weight: 700; 
+    color: #fff; 
+
+    display: flex; 
+}
+
+problem-color > *, 
+preview-color > * {
+    flex: 1; 
+
+    display: flex; 
+    justify-content: center; 
+    align-content: center; 
+}
+
+problem-color {
+    background-color: #000; 
+}
+
+@keyframes success-effect {
+    0% {
+        text-shadow: #f0f 0 0 1rem; 
+    }
+
+    100% {
+        text-shadow: #f0f 0 0 3rem; 
+    }
+}
+@keyframes success-color {
+    0% {
+        color: #ff0; 
+    }
+
+    100% {
+        color: #f0f; 
+    }
+}
+.success {
+    animation: success-color 0.33s infinite alternate, success-effect 0.66s 1; 
+}
+
+preview-color {
+    background-color: #000; 
+
+    display: flex; 
+}
+
+feedback {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+feedback > container > * {
+    display: block; 
+}
+
+game-title {
+    margin-bottom: 1rem; 
+
+    font-weight: 700; 
+}
+
+accuracy {
+    background-color: #000; 
+
+    cursor: none; 
+    
+    transition: background-color 0.33s; 
+}
+
+accuracy:hover {
+    background-color: #fff; 
+}
+
+accuracy > property {
+    background-color: #fff; 
+}
+
+play-again {
+    margin-top: 0.5rem; 
+    padding: 0.5rem 0; 
+    border-radius: 2rem; 
+
+    text-align: center; 
+    background-color: #000; 
+    color: #fff; 
+    cursor: pointer;
+
+    transition: background-color 0.33s; 
+}
+
+play-again:hover {
+    background-color: #0ff; 
+}
+
+enter-color {
+    display: flex; 
+
+    cursor: pointer; 
+}
+
+enter-color > * {
+    flex: 1; 
+    height: 50vh; 
+
+    font-weight: 400; 
+
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+enter-color > * > * {
+    flex: 0 0 25%; 
+    height: 12.5vh; 
+    font-size: 0.8rem; 
+    
+    color: #fff; 
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+@keyframes checked-color-value {
+    0% {
+        color: #fff8; 
+    }
+    100% {
+        color: #ffff; 
+    }
+}
+enter-color .checked {
+    animation: checked-color-value 0.33s infinite alternate; 
+}
+
+/* HOME */
+
+.home-link {
+    width: 100%; 
+    height: 8rem; 
+    max-height: 64px; 
+
+    background-image: url('/img/home-link.svg'); 
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}

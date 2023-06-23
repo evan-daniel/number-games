@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 1 1">
+    <g stroke-width="0.05" stroke="#000" fill="transparent">
+        <g transform="translate(0, -0.01)">
+            <g>
+                <circle r="0.1" cx="0.2" cy="0.5" fill="none" />
+                <circle r="0.1" cx="0.2" cy="0.7" fill="none" />
+                <rect x="0.05" y="0.5" width="0.15" height="0.2" fill="#fff" stroke="none" />
+
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+
+                    id="first"
+                    begin="0;third.end"
+
+                    dur="0.3333333"
+                    from="0 0"
+                    to="0 -0.1"
+                />
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+
+                    id="second"
+                    begin="first.end"
+
+                    dur="0.3333333"
+                    from="0 -0.1"
+                    to="0 0"
+                />
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+
+                    id="third"
+                    begin="second.end"
+
+                    dur="1.3333333"
+                    from="0 0"
+                    to="0 0"
+                />
+
+            </g>
+        </g>
+
+        <path d="M0.5 0.8, L 0.5 0.6" stroke="#000" fill="none" />
+
+        <g transform="translate(0.03, 0)">
+            <g>
+                <path d="M 0.8 0.8, L 0.8 0.4" fill="none" />
+                <path d="M 0.9 0.7, L 0.666 0.7, L 0.666 0.4" fill="none" />
+
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+
+                    id="firstr"
+                    begin="1;thirdr.end"
+
+                    dur="0.3333333"
+                    from="0 0"
+                    to="0 -0.1"
+                />
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+
+                    id="secondr"
+                    begin="firstr.end"
+
+                    dur="0.3333333"
+                    from="0 -0.1"
+                    to="0 0"
+                />
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+
+                    id="thirdr"
+                    begin="secondr.end"
+
+                    dur="1.3333333"
+                    from="0 0"
+                    to="0 0"
+                />
+            </g>
+        </g>
+
+        <circle stroke="transparent" r="0.025" fill="#000">
+            <animateMotion
+                dur="2s"
+                begin="0.33333"
+                path="M 0.33333 0.3333, Q 0.5 0 0.666666 0.333333, Q 0.5 0 0.33333 0.333333"
+                repeatCount="indefinite"
+            />
+        </circle>
+    </g>
+</svg>

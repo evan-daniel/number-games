@@ -1,0 +1,138 @@
+/* GLOBAL */
+
+:root {
+    box-sizing: border-box; 
+
+    touch-action: none;
+
+    --gh: calc(902px / 100); 
+    --gw: 1vw; 
+    --bh: calc(10 * var(--gh)); 
+    --bw: calc(14 * var(--gw)); 
+}
+
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit; 
+    margin: 0; 
+    padding: 0; 
+
+    touch-action: inherit; 
+}
+
+body {
+    font-family: 'Futura', sans-serif; 
+}
+
+/* GAME CONTAINER */
+
+.game-container {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+
+    overflow: hidden; 
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+/* COUNT */
+
+.count {
+    flex: 1 0 50px; 
+    
+    font-size: 2rem; 
+    
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.home {
+    height: 50px; 
+}
+
+.cursor {
+    flex: 0 0 4ch; 
+    height: 66px; 
+    
+    background-color: #000;
+    color: #fff; 
+    
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.last-correct {
+    flex: 0 0 auto; 
+    margin: 0 1ch; 
+    padding: 0 1ch; 
+
+    font-size: 1rem; 
+    user-select: none;
+    color: #888; 
+
+    border: 1px solid #000; 
+    border-radius: 25px; 
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#cursor-picker {
+    flex: 1 0 auto; 
+
+    background-color: #fff;
+}
+
+/* ABACUS CONTAINER */
+
+.abacus {
+    flex: 1 0 100%; 
+    width: 100%; 
+    max-width: 600px; 
+    
+    background-color: #ccc; 
+
+    display: flex; 
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+/* COLUMNS */
+
+.column {
+    position: relative; 
+    width: 100%; 
+    height: calc(10 * var(--gh)); 
+
+    /* background-color: #aaf; */
+}
+
+/* BEADS */
+
+.bead {
+    position: absolute; 
+    height: var(--bh); 
+    width: 14%; 
+
+    fill: #444; 
+}
+
+.column.selected .bead {
+    fill: #00f; 
+} 
+
+.column .bead:nth-of-type(1) {
+    
+}

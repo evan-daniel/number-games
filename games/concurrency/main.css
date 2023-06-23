@@ -1,0 +1,80 @@
+/* GLOBAL */
+
+:root {
+    box-sizing: border-box; 
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit; 
+    margin: 0; 
+    padding: 0; 
+
+    touch-action: none; 
+}
+
+body {
+    height: 100vh; 
+
+    font-size: 1.5rem; 
+    line-height: 0; 
+    font-family: 'Futura', sans-serif; 
+    font-weight: 700; 
+    color: #FFF; 
+}
+
+/* NUMPAD */
+
+#numpad-container {
+    position: absolute; 
+    top: 3rem; 
+    bottom: 0;
+    width: 100%; 
+
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.numpad {
+    flex: 1 0 50%; 
+    width: 100%; 
+    max-width: 512px; 
+
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+}
+
+/* NUMPAD CHILDREN */
+
+.numpad-button, 
+.numpad-num {
+    flex: 0 0 30%; 
+
+    background-color: #888; 
+    border: 5px solid #FFF; 
+    transition: 0.166s background-color; 
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* FEEDBACK */
+
+.feedback {
+    position: absolute; 
+    transform: rotate(90deg); 
+}
+
+/* HEADER */
+
+header {
+    height: 3rem; 
+}
+
+.home img {
+    height: 3rem; 
+}

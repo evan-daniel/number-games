@@ -1,0 +1,138 @@
+/* GLOBAL */
+
+:root {
+    height: 100%; 
+}
+
+*, 
+::before, 
+::after {
+    touch-action: none; 
+}
+
+/* GAME CONTAINER */
+
+.game-container {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+
+    background-color: #000;
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* CANVAS */
+
+canvas {
+    width: 100%; 
+    max-width: 512px; 
+    max-height: 512px; 
+    
+    background-color: #FFF; 
+}
+
+/* INTERFACE */
+
+.pi-feedback {
+    position: fixed; 
+    bottom: calc(50vh - 50vw); 
+
+    color: #FFF; 
+    font-size: 2rem; 
+    font-family: 'Futura', sans-serif; 
+    font-weight: 700; 
+    /* text-align: center;  */
+
+    background-color: #222; 
+}
+
+/* INTERFACE CONTAINS SETTINGS */
+
+.interface {
+    height: 50vh; 
+    width: 50vw; 
+
+    background-color: #000;
+    color: #fff; 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.interface > * {
+    width: 100%; 
+    margin: 0.6rem 0; 
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HOME BUTTON */
+
+.home-link {
+    height: 8rem; 
+    width: 8rem; 
+    
+    /* background-color: #aff8;  */
+    background-image: url('/img/home-link.svg'); 
+    background-size: contain; 
+}
+
+/* HINT */
+
+.interface_hint {
+    position: relative; 
+}
+
+.interface_hint, 
+.interface_hint * {
+    user-select: none;
+}
+
+.interface_hint::before {
+    content: '⌄'; 
+    position: absolute; 
+    top: 0; 
+}
+
+.hint {
+    max-width: 16rem;  
+    padding: 1.2rem; 
+    user-select: none;
+    
+    border-radius: 2.4rem; 
+    border: 1px solid #fff; 
+}
+
+.hint_cover {
+    position: absolute; 
+    top: 1.2rem; 
+    height: 1.2rem; 
+    width: 18ch; 
+
+    background-color: #000; 
+
+    cursor: pointer; 
+    transition: background-color 0.2s; 
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.hint_cover:hover {
+    background-color: transparent; 
+    color: transparent; 
+}
+
+.interface_description {
+    text-align: center; 
+}

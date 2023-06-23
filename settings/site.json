@@ -1,0 +1,23 @@
+{
+    "mechanics": {
+        "abacus": {
+            "icon": "/img/mechanics/rotate.svg"
+        }, 
+        "numpad": {
+            "icon": "/img/mechanics/abacus.svg"
+        }, 
+        "rotate": {
+            "icon": "/img/mechanics/rotate.svg"
+        }, 
+        "err": {
+            "icon": "/img/mechanics/abacus.svg"
+        }
+    }, 
+    "play": { 
+        "audio": false, 
+        "game_choice": "numpad", 
+        "show_past_numbers": true, 
+        "show_future_numbers": false, 
+        "another": "test"
+    }
+}

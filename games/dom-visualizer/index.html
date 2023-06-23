@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>games</title>
+    <link rel="icon" type="image/png" href="/img/favicon/favicon.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="purify.min.js"></script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <app>
+        <problem-dom>
+            <span>HTML</span>
+            <span><outline-frame>│ </outline-frame>HEAD</span>
+            <span><outline-frame>│ │ </outline-frame>TITLE</span>
+            <span><outline-frame>│ │ </outline-frame>LINK</span>
+            <span><outline-frame>│ </outline-frame>BODY</span>
+            <problem></problem>
+        </problem-dom>
+        <preview-dom>
+            <span>HTML</span>
+            <span><outline-frame>│ </outline-frame>HEAD</span>
+            <span><outline-frame>│ │ </outline-frame>TITLE</span>
+            <span><outline-frame>│ │ </outline-frame>LINK</span>
+            <span><outline-frame>│ </outline-frame>BODY</span>
+            <preview></preview>
+        </preview-dom>
+        <feedback>
+            <container>
+                <a class="home-link" href="/"></a>
+                <game-title>html visualizer</game-title>
+                <time>time: <span>0</span>/60</time>
+                <average-time>average time: <span>infinity</span></average-time>
+                <wins>wins: <span>0</span></wins>
+                <score>score: <span>0</span></score>
+                <play-again>play again</play-again>
+            </container>
+        </feedback>
+        <interface  contenteditable="true"></interface>
+    </app>
+
+    <template>
+        <div></div>
+        <b></b>
+        <em></em>
+        <span></span>
+    </template>
+</body>
+</html>

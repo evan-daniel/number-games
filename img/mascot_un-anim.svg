@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 1 1">
+    <g stroke-width="0.05" stroke="#000" fill="transparent">
+        <g transform="translate(0, -0.1)">
+            <g>
+                <circle r="0.1" cx="0.2" cy="0.5" fill="none" />
+                <circle r="0.1" cx="0.2" cy="0.7" fill="none" />
+                <rect x="0.05" y="0.5" width="0.15" height="0.2" fill="#fff" stroke="none" />
+            </g>
+        </g>
+
+        <path d="M0.5 0.8, L 0.5 0.6" stroke="#000" fill="none" />
+
+        <g transform="translate(0.03, 0)">
+            <g>
+                <path d="M 0.8 0.8, L 0.8 0.4" fill="none" />
+                <path d="M 0.9 0.7, L 0.666 0.7, L 0.666 0.4" fill="none" />
+            </g>
+        </g>
+
+        <circle stroke="transparent" r="0.025" cx="0.4" cy="0.25" fill="#000"></circle>
+    </g>
+</svg>

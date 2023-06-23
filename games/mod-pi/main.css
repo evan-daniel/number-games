@@ -1,0 +1,164 @@
+/* GLOBAL */
+
+:root {
+    height: 100%; 
+}
+
+*, 
+::before, 
+::after {
+    touch-action: none; 
+}
+
+body {
+    background-color: #000; 
+    
+    display: flex; 
+    justify-content: center;
+}
+
+/* GAME CONTAINER */
+
+.game-container {
+    max-width: 500px; 
+    
+    background-color: #000;
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* CANVAS */
+
+canvas {
+    width: 100%; 
+    background-color: #FFF; 
+}
+
+/* INTERFACE */
+
+.pi-feedback {
+    color: #FFF; 
+    font-size: 2rem; 
+    font-family: 'Futura', sans-serif; 
+    font-weight: 700; 
+    /* text-align: center;  */
+
+    background-color: #222; 
+}
+
+/* FEEDBACK CIRCLE IN CENTER */
+
+.pi-feedback-circle {
+    position: fixed; 
+    top: 21.875vh; 
+    left: calc(50vw - 3.125vh); 
+    width: 6.25vh; 
+    height: 6.25vh; 
+
+    /* background-color: #0F0;  */
+    background-color: #000;
+    border-radius: 6.125vh; 
+}
+
+/* INTERFACE CONTAINS SETTINGS */
+
+.interface {
+    height: 50vh; 
+    width: 100%; 
+
+    background-color: #000;
+    color: #fff; 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.interface > * {
+    width: 100%; 
+    margin: 0.3rem 0; 
+    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HOME BUTTON */
+
+.interface_home-link {
+    margin: 0; 
+}
+
+.home-link {
+    height: 8rem; 
+    width: 8rem; 
+    
+    /* background-color: #aff8;  */
+    background-image: url('/img/home-link.svg'); 
+    background-size: contain; 
+}
+
+/* HINT */
+
+.interface_hint {
+    position: relative; 
+}
+
+.interface_hint::before {
+    content: '⌄'; 
+    position: absolute; 
+    top: 0; 
+}
+
+.hint {
+    max-width: 16rem;  
+    padding: 1.2rem; 
+    
+    border-radius: 2.4rem; 
+    border: 1px solid #fff; 
+}
+
+.hint_cover {
+    position: absolute; 
+    top: 1.2rem; 
+    height: 1.2rem; 
+    width: 18ch; 
+
+    background-color: #000; 
+
+    cursor: pointer; 
+    transition: background-color 0.2s; 
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    display: none; 
+}
+
+.hint_cover:hover {
+    background-color: transparent; 
+    color: transparent; 
+}
+
+.interface_description {
+    text-align: center; 
+}
+
+.reset {
+    margin: 0.6rem 0; 
+    padding: 1.2rem; 
+    
+    border: 1px solid #fff; 
+    cursor: pointer; 
+
+    border-radius: 2.4rem; 
+}
+
+.base-select {
+    width: 250px; 
+}

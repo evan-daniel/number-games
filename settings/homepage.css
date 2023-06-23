@@ -1,0 +1,116 @@
+/* CONTAINER */
+
+.container {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+
+    display: grid; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* SHOWCASE */
+.showcase {
+    position: relative; 
+    height: 100vmin; 
+    width: 100vmin; 
+    overflow: hidden; 
+
+    background-color: #000; 
+    
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+/* CELL */
+
+.cell {
+    /* position: relative;  */
+    z-index: 100; 
+    
+    cursor: help; 
+    border: 0.0625rem solid #fff; 
+
+    display: flex; 
+}
+
+/* GAME-ICON */
+
+.game-icon {
+    position: relative; 
+    height: auto; 
+    width: 100%; 
+    
+    background-color: #fff; 
+    transition: 0.166s opacity; 
+}
+
+.game-icon:hover {
+    opacity: 0.5; 
+}
+
+/* DESCRIPTION */
+
+.description {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    visibility: hidden;
+
+    color: #fff; 
+}
+
+.description.dev {
+    visibility: visible; 
+    z-index: 1000; 
+
+    background-color: #000;
+}
+
+.description-cta {
+    display: flex; 
+}
+
+.description-icon {
+    width: calc(33.33% - 1.2rem); 
+    height: calc(33.33% - 1.2rem); 
+
+    background-color: #fff; 
+    
+    border: 1px solid #fff; 
+}
+
+.description-title {
+    padding: 0 1ch; 
+    
+    font-size: 2rem; 
+    
+    border: 0.0625rem solid #fff; 
+    border-bottom-right-radius: 33vw;
+    border-top-right-radius: 33vw;
+    
+    display: flex; 
+    align-items: center; 
+}
+
+.description-title:hover {
+    background-color: #00f; 
+}
+
+.description-content {
+    margin: 2.4rem 1.2em; 
+
+    white-space: pre-line; 
+}
+
+.description-exit {
+    text-decoration: underline;
+    cursor: pointer; 
+}

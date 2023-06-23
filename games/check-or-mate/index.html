@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>games</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        
+        <script src="/lib/jquery.js"></script>
+        <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js" integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD" crossorigin="anonymous"></script>
+        <script src="/lib/chess-0.10.2.min.js"></script>
+        <script type="module" src="main.js"></script>
+    </head>    
+
+    <body>
+
+        <!-- HEADER -->
+
+        <div class="header">
+            <a class="home" href="/">
+                <img src="/img/mascot_un-anim.svg">
+            </a>
+        </div>
+        
+        <!-- INTERFACE -->  
+        
+        <div class="game">
+            <div id="chessboard"></div>
+            <div class="chess-buttons">
+                <div class="submit-mate">mate</div>
+                <div class="submit-check">check</div>
+            </div>
+        </div>
+
+    </body>
+</html>

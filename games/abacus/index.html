@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>π Abacus</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="main.css">
+        <script type="module" src="main.js"></script>
+    </head>
+    <body>
+        <div class="game-container">
+
+            <div class="count">
+                <a href="/">
+                    <img class="home" src="/img/mascot_un-anim.svg">
+                </a>
+                <div class="cursor">0</div>
+                <div class="last-correct">reset</div>
+                <input id="cursor-picker" type="range" value="0" min="0" max="3000" step="100" width="300px">
+            </div>
+    
+            <div class="abacus">
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+                
+                <div class="column">
+                    <svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg><svg class="bead" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 2" preserveAspectRatio="none">
+                        <path stroke-width="0" d="M 0.5 0 L 1 0.5 L 1 1.5 L 0.5 2 L 0 1.5 L 0 0.5 Z" />
+                    </svg>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </body>
+</html>
